@@ -5,16 +5,16 @@ import { FaShoppingCart, FaUser } from 'react-icons/fa';
 const Header = () => {
   return (
     <header>
-        <Navbar bg="dark" variant='dark' expand="md" >
+        <Navbar bg="dark" variant='dark' expand="md" collapseOnSelect >
             <Container>
-                <NavbarBrand href="/">Proshop</NavbarBrand>
-                <NavbarToggle aria-controls='basic-navbar-nav' />
-                <NavbarCollapse>
+                <Navbar.Brand href="/">Proshop</Navbar.Brand>
+                <Navbar.Toggle aria-controls='basic-navbar-nav' />
+                <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="ms-auto">
                         <Nav.Link href='/cart'><FaShoppingCart /> Cart</Nav.Link>
                         <Nav.Link href='/login'><FaUser /> Sign In</Nav.Link>
                     </Nav>
-                </NavbarCollapse>
+                </Navbar.Collapse>
             </Container>
         </Navbar>
     </header>
